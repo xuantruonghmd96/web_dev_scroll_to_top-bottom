@@ -8,18 +8,24 @@
     <title>Scroll to top/bottom</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="scrollTopBottom.css">
+    <style>
+        body {
+            background: gray;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Scroll to top, bottom buttons -->
-    <button id="scrollToTopBtn" class="scrollTopBottomBtn" data-toggle="tooltip" title="Về đầu trang">
+    <button id="scrollToTopBtn" class="scrollTopBottomBtn" data-toggle="tooltip" title="Về đầu trang" style="display: none;">
         <i class="fas fa-angle-double-up fa-2x"></i>
     </button>
     <button id="scrollToBottomBtn" class="scrollTopBottomBtn" data-toggle="tooltip" title="Về cuối trang" style="display: block;">
         <i class="fas fa-angle-double-down fa-2x"></i>
     </button>
 
-    <div style="width: 100%; background-color: red; font-size: 5em; text-align: center;">asdfsad</div>
+    <div style="width: 100%; background-color: red; font-size: 5em; text-align: center;">Header</div>
     <div style="width: 50%; height: 400px; background-color: palegreen;"></div>
     <div style="width: 50%; height: 400px; background-color: blue;"></div>
     <div style="width: 50%; height: 400px; background-color: blueviolet;"></div>
