@@ -8,10 +8,13 @@
     right: 30px;
 }
 
+
 .scrollTopBottomBtn {
+    display: none; /* Mặc định button sẽ được ẩn */
     position: fixed;
     
-    z-index: 99;    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    z-index: 99;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
     border: none;
     outline: none;
     background-color: #555;
@@ -25,6 +28,6 @@
     background-color: red;
 }
 
-/* .scrollTopBottomBtn:focus {
+.scrollTopBottomBtn:focus {
     outline: none;
-} */
+}

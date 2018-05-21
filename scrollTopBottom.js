@@ -4,7 +4,7 @@ window.onscroll = function () { scrollFunction() };
 // khai báo hàm scrollFunction
 function scrollFunction() {
     // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 40) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         //nếu lớn hơn 20px thì hiện button scrollToTop
         document.getElementById("scrollToTopBtn").style.display = "block";
     } else {
@@ -13,7 +13,7 @@ function scrollFunction() {
     }
 
     // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 40) {
+    if (document.documentElement.scrollTop + window.innerHeight > document.body.scrollHeight - 40) {
         //nếu nhỏ hơn 20px thì ẩn button scrollToBottom
         document.getElementById("scrollToBottomBtn").style.display = "none";
     } else {
